@@ -13,7 +13,7 @@ First of all, try to understand the concept first in  [my article](https://www.a
 The concept focuses on monitoring water distribution within the pipeline and sending notifications if a leak occurs. The monitoring website utilizes [Thinger.io](https://thinger.io/), while [Telegram](https://web.telegram.org/a/) handles the notification messages.
 
 ## The Scheme
-> The number of sensors can be increased or decreased depending on the requirements. />
+> The number of sensors can be increased or decreased depending on the requirements. 
 <img width="1159" height="604" alt="Sig (1)" src="https://github.com/user-attachments/assets/41e85c58-c2e1-4b84-b1a9-ff46e8834755" />
 
 
