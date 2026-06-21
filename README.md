@@ -19,6 +19,7 @@ If Thinger.io fails to connect while the device still has an active internet con
 It is important to note that Telegram Group IDs has negative values. Therefore, they must be stored using a 64-bit integer (int64). In this system, we use the CTBot library for Telegram Bot integration and ArduinoJson version 6.19.4, which is the supported version for the current implementation. 
 
 ## Calibration & Signal Related
+A sensor can be considered to be in good condition if it meets the required precision and resolution specifications. In addition, do not forget to evaluate the linearity of each sensor, as this directly affects measurement accuracy. Verifying precision, resolution, and linearity helps ensure that the sensor provides reliable and accurate data.
 
 ## The Schematic
 > The number of sensors can be increased or decreased depending on the requirements. 
