@@ -28,7 +28,10 @@ With some sensors, there is a tendency for the output value of the sensor to dri
 In partial testing or individual sensor testing, sensors may only be evaluated under static response conditions. However, when integrated into the complete system, the sensors are required to respond to dynamic operating conditions. These dynamic conditions can introduce deviations, response delays, or non linearities that may not be observed during individual sensor testing.
 
 ## The Schematic
-> The number of sensors can be increased or decreased depending on the requirements. The addition of multiple analog inputs necessitates accurate calculation of the system’s power (voltage and current) requirements, as the system typically depends on the external power supply.
+**The number of sensors can be increased or decreased depending on the requirements.** 
+The addition of multiple analog inputs necessitates accurate calculation of the system’s power (voltage and current) requirements, as the system typically depends on the external power supply.
+
+According to the ADS1115 datasheet,
 > The resistor and capacitor are needed. When the ADS1115 is converting data, it draws current in short spikes. The 0.1μF bypass capacitor supplies the momentary bursts of extra current needed from the supply. On the I2C interface, the bus wires are pulled high by pull-up resistors.
 <img width="1159" height="604" alt="Sig (1)" src="https://github.com/user-attachments/assets/41e85c58-c2e1-4b84-b1a9-ff46e8834755" />
 
