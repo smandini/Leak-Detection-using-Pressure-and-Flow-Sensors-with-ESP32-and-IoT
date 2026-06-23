@@ -12,7 +12,8 @@ First of all, try to understand the concept first in  [my article](https://www.a
 ### Monitoring & Notification
 The concept focuses on monitoring water distribution within the pipeline and sending notifications if a leak occurs. The monitoring website utilizes [Thinger.io](https://thinger.io/), while [Telegram](https://web.telegram.org/a/) handles the notification messages.
 
-Example of the device connection status (NodeMCU ESP32) displayed on Thinger.io.
+Example of the device connection status (NodeMCU ESP32) displayed on Thinger.io:
+
 <img width="1363" height="647" alt="Thinger_Connection" src="https://github.com/user-attachments/assets/b259abb6-b474-4ea8-a4a2-32315b272947" />
 
 
