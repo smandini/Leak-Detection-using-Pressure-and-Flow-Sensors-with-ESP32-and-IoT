@@ -20,6 +20,7 @@ It is important to note that Telegram Group IDs has negative values. Therefore, 
 
 ## Calibration & Signal Related
 **_The flow meter sensor transmits a digital signal, whereas the pressure sensor outputs an analog signal._**
+
 Many sensor characteristics are not specified by the manufacturer or supplier. Therefore, understanding and evaluating the sensor's output value is very important to ensure reliable performance and accurate measurements. A sensor can be considered to be in good condition if it meets the required precision and resolution specifications. In addition, do not forget to evaluate the linearity of each sensor using mathematics equation, as this directly affects measurement accuracy. Verifying precision, resolution, and linearity helps ensure that the sensor provides reliable and accurate data.
 
 With some sensors, there is a tendency for the output value of the sensor to drift when used for a long time. The temporal stability of the sensor signal seems to be important in order not to increase the measurement error of the sensor.
