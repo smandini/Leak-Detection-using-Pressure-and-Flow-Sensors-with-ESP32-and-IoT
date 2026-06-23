@@ -66,6 +66,7 @@ currentLokasi = "NULL";
 ```
 
 
+<img width="1000" height="564" alt="WhatsApp Video 2024-09-04 at 6 11 13 PM (1)" src="https://github.com/user-attachments/assets/6bd7f735-de52-493e-802e-1d675224452e" />
 
 
 
