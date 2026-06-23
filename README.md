@@ -23,6 +23,10 @@ Many sensor characteristics are not specified by the manufacturer or supplier. T
 
 With some sensors, there is a tendency for the output value of the sensor to drift when used for a long time. The temporal stability of the sensor signal seems to be important in order not to increase the measurement error of the sensor.
 
+**The most important things are ensuring that the system receives a sufficient voltage supply and that the ground connections are properly paired for each component or sensor. During system testing, a slight decrease in the resolution and precision of the output is generally considered normal, provided that the deviation remains within an acceptable range and does not significantly affect the system's performance.**
+
+In partial testing, sensors may only be evaluated under static response conditions. However, when integrated into the complete system, the sensors are required to respond to dynamic operating conditions. These dynamic conditions can introduce deviations, response delays, or nonlinearities that may not be observed during individual sensor testing.
+
 ## The Schematic
 > The number of sensors can be increased or decreased depending on the requirements. 
 <img width="1159" height="604" alt="Sig (1)" src="https://github.com/user-attachments/assets/41e85c58-c2e1-4b84-b1a9-ff46e8834755" />
