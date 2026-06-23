@@ -17,8 +17,6 @@ Example of the device connection status (NodeMCU ESP32) displayed on Thinger.io:
 <img width="1363" height="647" alt="Thinger_Connection" src="https://github.com/user-attachments/assets/b259abb6-b474-4ea8-a4a2-32315b272947" />
 
 
-
-
 Since we use Thinger.io and its Data Buckets to store historical and time series data from connected devices, we need to understand that the server may not be designed to handle frequent device reconnections or unstable network connections. For example, we configure the microcontroller to collect sensor data every five minutes. However, if a reconnection occurs; even for a very brief period, such as a few milliseconds before the next five minutes interval is reached, the system may initiate a synchronization process from the last recorded connection. As a result, this behavior could cause inconsistencies in the data collection intervals recorded in the Data Buckets.
 
 If Thinger.io fails to connect while the device still has an active internet connection, the issue is likely related to the code implementation rather than the network itself. In such cases, pay close attention to the program flow and verify which functions or processes need to be executed first. An incorrect execution order may prevent the Thinger.io from establishing or maintaining a connection.
@@ -45,6 +43,27 @@ According to the ADS1115 datasheet,
 <img width="1159" height="604" alt="Sig (1)" src="https://github.com/user-attachments/assets/41e85c58-c2e1-4b84-b1a9-ff46e8834755" />
 
 ## Codes
+```
+A = abs(flowRate2 - flowRate1);
+B = abs(flowRate3 - flowRate2);
+C = 0.04 * flowRate1;
+D = 0.04 * flowRate2;
+
+if (A > C) {
+currentKondisi = "BOCOR";
+currentLokasi = "AREA 1";}
+if (B > D) {
+currentKondisi = "BOCOR";
+currentLokasi = "AREA 1 & 2";}
+else {
+if (B > D) {
+currentKondisi = "BOCOR";
+currentLokasi = "AREA 2";}
+else {
+currentKondisi = "TIDAK BOCOR";
+currentLokasi = "NULL";
+}
+```
 
 
 
