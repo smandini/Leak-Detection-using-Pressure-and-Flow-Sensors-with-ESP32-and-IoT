@@ -19,6 +19,8 @@ If Thinger.io fails to connect while the device still has an active internet con
 It is important to note that Telegram Group IDs has negative values. Therefore, they must be stored using a 64-bit integer (int64). In this system, we use the CTBot library for Telegram Bot integration and ArduinoJson version 6.19.4, which is the supported version for the current implementation. 
 
 ## Calibration & Signal Related
+**_The flow meter sensor transmits a digital signal, whereas the pressure sensor outputs an analog signal._
+**
 Many sensor characteristics are not specified by the manufacturer or supplier. Therefore, understanding and evaluating the sensor's output value is very important to ensure reliable performance and accurate measurements. A sensor can be considered to be in good condition if it meets the required precision and resolution specifications. In addition, do not forget to evaluate the linearity of each sensor using mathematics equation, as this directly affects measurement accuracy. Verifying precision, resolution, and linearity helps ensure that the sensor provides reliable and accurate data.
 
 With some sensors, there is a tendency for the output value of the sensor to drift when used for a long time. The temporal stability of the sensor signal seems to be important in order not to increase the measurement error of the sensor.
@@ -29,7 +31,7 @@ In partial testing or individual sensor testing, sensors may only be evaluated u
 
 ## The Schematic
 **The number of sensors can be increased or decreased depending on the requirements.** 
-The addition of multiple analog inputs necessitates accurate calculation of the system’s power (voltage and current) requirements, as the system typically depends on the external power supply.
+The addition of multiple analog and digital inputs necessitates accurate calculation of the system’s power (voltage and current) requirements, as the system typically depends on the external power supply.
 
 According to the ADS1115 datasheet,
 > The resistor and capacitor are needed. When the ADS1115 is converting data, it draws current in short spikes. The 0.1μF bypass capacitor supplies the momentary bursts of extra current needed from the supply. On the I2C interface, the bus wires are pulled high by pull-up resistors.
