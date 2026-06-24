@@ -65,8 +65,12 @@ currentLokasi = "NULL";
 }
 ```
 
+### The Thinger.io Dashboard for Water Leak Monitoring System
 
 <img width="1000" height="564" alt="WhatsApp Video 2024-09-04 at 6 11 13 PM (1)" src="https://github.com/user-attachments/assets/6bd7f735-de52-493e-802e-1d675224452e" />
+
+
+<img width="1366" height="643" alt="Screenshot (1393)" src="https://github.com/user-attachments/assets/2d351ab2-e5b4-4728-9b55-b52c6b9c67ba" />
 
 
 
